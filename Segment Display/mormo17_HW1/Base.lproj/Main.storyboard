@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mormo17_HW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UnQ-ve-umQ">
+                                <rect key="frame" x="149" y="254" width="116" height="237"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v4h-kZ-Hw0">
+                                        <rect key="frame" x="13" y="0.0" width="92" height="11"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fB0-gf-W4Y">
+                                        <rect key="frame" x="13" y="113" width="92" height="11"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VSB-7X-xe9">
+                                        <rect key="frame" x="13" y="226" width="92" height="11"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l6f-Kd-65A">
+                                        <rect key="frame" x="0.0" y="16" width="11" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VhT-g7-bDY">
+                                        <rect key="frame" x="105" y="16" width="11" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NUf-eI-ayH">
+                                        <rect key="frame" x="0.0" y="129" width="11" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1A5-U3-6eI">
+                                        <rect key="frame" x="105" y="129" width="11" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RA4-9h-fVX">
+                                <rect key="frame" x="6" y="254" width="116" height="237"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="geL-dG-4oX">
+                                        <rect key="frame" x="13" y="0.0" width="92" height="11"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lKe-4d-02L">
+                                        <rect key="frame" x="13" y="113" width="92" height="11"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5sH-h3-pFf">
+                                        <rect key="frame" x="13" y="226" width="92" height="11"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Grx-Jz-680">
+                                        <rect key="frame" x="0.0" y="16" width="11" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m9h-o0-RMA">
+                                        <rect key="frame" x="105" y="16" width="11" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EiV-sb-oSJ">
+                                        <rect key="frame" x="0.0" y="129" width="11" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xdO-gC-X3B">
+                                        <rect key="frame" x="105" y="129" width="11" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JIG-5y-8wN">
+                                <rect key="frame" x="289" y="254" width="116" height="237"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sJP-kx-h4X">
+                                        <rect key="frame" x="13" y="0.0" width="92" height="11"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mAQ-4w-3st">
+                                        <rect key="frame" x="13" y="113" width="92" height="11"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gUM-AX-lm5">
+                                        <rect key="frame" x="13" y="226" width="92" height="11"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4gZ-75-I6c">
+                                        <rect key="frame" x="0.0" y="16" width="11" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FJu-BW-uRn">
+                                        <rect key="frame" x="105" y="16" width="11" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VCv-Qs-gLr">
+                                        <rect key="frame" x="0.0" y="129" width="11" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FKc-gt-Ilm">
+                                        <rect key="frame" x="105" y="129" width="11" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="digitView1" destination="Grx-Jz-680" collectionClass="NSMutableArray" id="5dO-K9-Oju"/>
+                        <outletCollection property="digitView1" destination="geL-dG-4oX" collectionClass="NSMutableArray" id="L2g-83-W42"/>
+                        <outletCollection property="digitView1" destination="m9h-o0-RMA" collectionClass="NSMutableArray" id="dh2-qF-Tge"/>
+                        <outletCollection property="digitView1" destination="xdO-gC-X3B" collectionClass="NSMutableArray" id="fA1-Xv-6Tg"/>
+                        <outletCollection property="digitView1" destination="5sH-h3-pFf" collectionClass="NSMutableArray" id="yBH-8l-GT2"/>
+                        <outletCollection property="digitView1" destination="EiV-sb-oSJ" collectionClass="NSMutableArray" id="JSL-ZK-q3x"/>
+                        <outletCollection property="digitView1" destination="lKe-4d-02L" collectionClass="NSMutableArray" id="idv-Bz-MzD"/>
+                        <outletCollection property="digitView2" destination="l6f-Kd-65A" collectionClass="NSMutableArray" id="Mzb-9b-DFq"/>
+                        <outletCollection property="digitView2" destination="v4h-kZ-Hw0" collectionClass="NSMutableArray" id="ngw-eQ-Fph"/>
+                        <outletCollection property="digitView2" destination="VhT-g7-bDY" collectionClass="NSMutableArray" id="bTa-Tb-i6B"/>
+                        <outletCollection property="digitView2" destination="1A5-U3-6eI" collectionClass="NSMutableArray" id="Vu9-vn-7BH"/>
+                        <outletCollection property="digitView2" destination="VSB-7X-xe9" collectionClass="NSMutableArray" id="5ht-8m-LdD"/>
+                        <outletCollection property="digitView2" destination="NUf-eI-ayH" collectionClass="NSMutableArray" id="ldE-xM-zgk"/>
+                        <outletCollection property="digitView2" destination="fB0-gf-W4Y" collectionClass="NSMutableArray" id="f4v-kk-5aY"/>
+                        <outletCollection property="digitView3" destination="4gZ-75-I6c" collectionClass="NSMutableArray" id="TYI-wX-zaq"/>
+                        <outletCollection property="digitView3" destination="sJP-kx-h4X" collectionClass="NSMutableArray" id="806-Kb-Thk"/>
+                        <outletCollection property="digitView3" destination="FJu-BW-uRn" collectionClass="NSMutableArray" id="1sK-O0-gSO"/>
+                        <outletCollection property="digitView3" destination="FKc-gt-Ilm" collectionClass="NSMutableArray" id="gAu-EO-Z6q"/>
+                        <outletCollection property="digitView3" destination="gUM-AX-lm5" collectionClass="NSMutableArray" id="Sji-I9-o88"/>
+                        <outletCollection property="digitView3" destination="VCv-Qs-gLr" collectionClass="NSMutableArray" id="nDg-rX-ziz"/>
+                        <outletCollection property="digitView3" destination="mAQ-4w-3st" collectionClass="NSMutableArray" id="arB-lT-JKr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
