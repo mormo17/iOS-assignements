@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5435737B2560531A00C10658 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5435737A2560531A00C10658 /* AppDelegate.swift */; };
+		5435737D2560531A00C10658 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5435737C2560531A00C10658 /* SceneDelegate.swift */; };
+		5435737F2560531A00C10658 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5435737E2560531A00C10658 /* HomeViewController.swift */; };
+		543573822560531A00C10658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543573802560531A00C10658 /* Main.storyboard */; };
+		543573842560531B00C10658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543573832560531B00C10658 /* Assets.xcassets */; };
+		543573872560531B00C10658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543573852560531B00C10658 /* LaunchScreen.storyboard */; };
+		543573912560535000C10658 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543573902560535000C10658 /* RoundButton.swift */; };
+		545E012D256C16AB0031A0A9 /* CallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E012C256C16AB0031A0A9 /* CallButton.swift */; };
+		545E0130256C177A0031A0A9 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E012F256C177A0031A0A9 /* DeleteButton.swift */; };
+		545E014D256C33120031A0A9 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545E014C256C33120031A0A9 /* CustomButton.xib */; };
+		545E0154256C39230031A0A9 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E0153256C39230031A0A9 /* CustomButton.swift */; };
+		54B43E562569C88600235351 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B43E552569C88600235351 /* ContactsViewController.swift */; };
+		54B43E5A2569D72600235351 /* BlankPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B43E592569D72600235351 /* BlankPageViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		543573772560531A00C10658 /* Dialpad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dialpad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5435737A2560531A00C10658 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5435737C2560531A00C10658 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5435737E2560531A00C10658 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		543573812560531A00C10658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		543573832560531B00C10658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		543573862560531B00C10658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		543573882560531B00C10658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		543573902560535000C10658 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		545E012C256C16AB0031A0A9 /* CallButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallButton.swift; sourceTree = "<group>"; };
+		545E012F256C177A0031A0A9 /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
+		545E014C256C33120031A0A9 /* CustomButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
+		545E0153256C39230031A0A9 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		54B43E552569C88600235351 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		54B43E592569D72600235351 /* BlankPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankPageViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		543573742560531A00C10658 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5435736E2560531A00C10658 = {
+			isa = PBXGroup;
+			children = (
+				54CA5C34256DB8CD0019F58B /* Controllers */,
+				54CA5C32256DABA70019F58B /* Custom Buttons */,
+				543573792560531A00C10658 /* Dialpad */,
+				543573782560531A00C10658 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		543573782560531A00C10658 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				543573772560531A00C10658 /* Dialpad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		543573792560531A00C10658 /* Dialpad */ = {
+			isa = PBXGroup;
+			children = (
+				5435737A2560531A00C10658 /* AppDelegate.swift */,
+				5435737C2560531A00C10658 /* SceneDelegate.swift */,
+				543573832560531B00C10658 /* Assets.xcassets */,
+				543573852560531B00C10658 /* LaunchScreen.storyboard */,
+				543573882560531B00C10658 /* Info.plist */,
+				543573802560531A00C10658 /* Main.storyboard */,
+			);
+			path = Dialpad;
+			sourceTree = "<group>";
+		};
+		54CA5C32256DABA70019F58B /* Custom Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				545E0153256C39230031A0A9 /* CustomButton.swift */,
+				545E014C256C33120031A0A9 /* CustomButton.xib */,
+				543573902560535000C10658 /* RoundButton.swift */,
+				545E012F256C177A0031A0A9 /* DeleteButton.swift */,
+				545E012C256C16AB0031A0A9 /* CallButton.swift */,
+			);
+			path = "Custom Buttons";
+			sourceTree = "<group>";
+		};
+		54CA5C34256DB8CD0019F58B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				54B43E592569D72600235351 /* BlankPageViewController.swift */,
+				54B43E552569C88600235351 /* ContactsViewController.swift */,
+				5435737E2560531A00C10658 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		543573762560531A00C10658 /* Dialpad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5435738B2560531B00C10658 /* Build configuration list for PBXNativeTarget "Dialpad" */;
+			buildPhases = (
+				543573732560531A00C10658 /* Sources */,
+				543573742560531A00C10658 /* Frameworks */,
+				543573752560531A00C10658 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dialpad;
+			productName = Dialpad;
+			productReference = 543573772560531A00C10658 /* Dialpad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5435736F2560531A00C10658 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					543573762560531A00C10658 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 543573722560531A00C10658 /* Build configuration list for PBXProject "Dialpad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5435736E2560531A00C10658;
+			productRefGroup = 543573782560531A00C10658 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				543573762560531A00C10658 /* Dialpad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		543573752560531A00C10658 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545E014D256C33120031A0A9 /* CustomButton.xib in Resources */,
+				543573872560531B00C10658 /* LaunchScreen.storyboard in Resources */,
+				543573842560531B00C10658 /* Assets.xcassets in Resources */,
+				543573822560531A00C10658 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		543573732560531A00C10658 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5435737F2560531A00C10658 /* HomeViewController.swift in Sources */,
+				5435737B2560531A00C10658 /* AppDelegate.swift in Sources */,
+				545E0154256C39230031A0A9 /* CustomButton.swift in Sources */,
+				5435737D2560531A00C10658 /* SceneDelegate.swift in Sources */,
+				545E012D256C16AB0031A0A9 /* CallButton.swift in Sources */,
+				545E0130256C177A0031A0A9 /* DeleteButton.swift in Sources */,
+				543573912560535000C10658 /* RoundButton.swift in Sources */,
+				54B43E562569C88600235351 /* ContactsViewController.swift in Sources */,
+				54B43E5A2569D72600235351 /* BlankPageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		543573802560531A00C10658 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				543573812560531A00C10658 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		543573852560531B00C10658 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				543573862560531B00C10658 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		543573892560531B00C10658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5435738A2560531B00C10658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5435738C2560531B00C10658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Dialpad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mormo17.Dialpad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5435738D2560531B00C10658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Dialpad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mormo17.Dialpad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		543573722560531A00C10658 /* Build configuration list for PBXProject "Dialpad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543573892560531B00C10658 /* Debug */,
+				5435738A2560531B00C10658 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5435738B2560531B00C10658 /* Build configuration list for PBXNativeTarget "Dialpad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5435738C2560531B00C10658 /* Debug */,
+				5435738D2560531B00C10658 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5435736F2560531A00C10658 /* Project object */;
+}
