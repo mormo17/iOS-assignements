@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTextField" customModule="Dialpad">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="PaW-oG-NWx"/>
+                <outlet property="image" destination="u9c-vh-din" id="3jb-16-tcb"/>
+                <outlet property="label" destination="Wav-p2-ZAZ" id="zXa-kc-fJr"/>
+                <outlet property="textField" destination="91N-BL-HrT" id="p30-NK-eis"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="591" height="118"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="91N-BL-HrT">
+                    <rect key="frame" x="118" y="29.5" width="473" height="88.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="clicked" destination="-1" eventType="editingDidEnd" id="ocI-Si-MDr"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wav-p2-ZAZ">
+                    <rect key="frame" x="113" y="5" width="31" height="29.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" name="AccentColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9c-vh-din" userLabel="Image">
+                    <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemGray5Color"/>
+            <constraints>
+                <constraint firstItem="91N-BL-HrT" firstAttribute="top" secondItem="Wav-p2-ZAZ" secondAttribute="bottom" constant="-5" id="2lV-zW-sb1"/>
+                <constraint firstItem="91N-BL-HrT" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="DYn-7y-2u8"/>
+                <constraint firstItem="91N-BL-HrT" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.75" id="S51-do-gIY"/>
+                <constraint firstItem="u9c-vh-din" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="URj-gs-fUv"/>
+                <constraint firstItem="u9c-vh-din" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="cS3-W9-CjB"/>
+                <constraint firstItem="u9c-vh-din" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.2" id="nEB-pc-kNm"/>
+                <constraint firstAttribute="trailing" secondItem="91N-BL-HrT" secondAttribute="trailing" id="tcH-ew-x6J"/>
+                <constraint firstItem="Wav-p2-ZAZ" firstAttribute="leading" secondItem="u9c-vh-din" secondAttribute="trailing" constant="-5" id="xST-wN-plv"/>
+                <constraint firstAttribute="bottom" secondItem="91N-BL-HrT" secondAttribute="bottom" id="ybA-GJ-6ia"/>
+                <constraint firstAttribute="bottom" secondItem="u9c-vh-din" secondAttribute="bottom" id="zn7-2o-9lr"/>
+                <constraint firstItem="Wav-p2-ZAZ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.25" id="zvn-MD-zo9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="74.637681159420296" y="-119.86607142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

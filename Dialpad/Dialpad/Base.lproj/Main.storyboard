@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2KS-pW-Yp8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MqL-zl-r6c">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -11,7 +11,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="exf-u8-NWa">
             <objects>
-                <tabBarController id="2KS-pW-Yp8" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarController" id="2KS-pW-Yp8" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hiX-lS-xmt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -37,8 +37,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oF7-e5-HBS" userLabel="Main Stack View">
-                                <rect key="frame" x="63" y="173" width="288" height="550"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oF7-e5-HBS" userLabel="Main Stack View">
+                                <rect key="frame" x="63" y="183" width="288" height="530"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="diP-Pz-wDI" userLabel="Number Stack View">
                                         <rect key="frame" x="96" y="0.0" width="96.5" height="90"/>
@@ -63,8 +63,8 @@
                                             <constraint firstItem="fhY-qg-YqR" firstAttribute="centerX" secondItem="diP-Pz-wDI" secondAttribute="centerX" id="xNP-Rc-OId"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="bottom" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oc3-z5-Ors" userLabel="Passcode Buttons Stack View">
-                                        <rect key="frame" x="0.0" y="120" width="288" height="430"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oc3-z5-Ors" userLabel="Passcode Buttons Stack View">
+                                        <rect key="frame" x="0.0" y="120" width="288" height="410"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gOB-rq-ar1" userLabel="123">
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="74"/>
@@ -90,7 +90,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="acz-KN-lUu" userLabel="456">
-                                                <rect key="frame" x="0.0" y="89" width="288" height="74"/>
+                                                <rect key="frame" x="0.0" y="84" width="288" height="74"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AkI-0h-a2w" userLabel="4 Passcode Button" customClass="CustomButton" customModule="Dialpad" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="82.5" height="74"/>
@@ -113,7 +113,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pln-lZ-S8a" userLabel="789">
-                                                <rect key="frame" x="0.0" y="178" width="288" height="74"/>
+                                                <rect key="frame" x="0.0" y="168" width="288" height="74"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbx-aw-QpB" userLabel="7 Passcode Button" customClass="CustomButton" customModule="Dialpad" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="82.5" height="74"/>
@@ -136,7 +136,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="R8O-HV-Whf" userLabel="*0#">
-                                                <rect key="frame" x="0.0" y="267" width="288" height="74"/>
+                                                <rect key="frame" x="0.0" y="252" width="288" height="74"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cD6-No-dIU" userLabel="* Passcode Button" customClass="CustomButton" customModule="Dialpad" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="82.5" height="74"/>
@@ -159,15 +159,15 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sjQ-Wu-50w" userLabel="callDelete">
-                                                <rect key="frame" x="0.0" y="356" width="288" height="74"/>
+                                                <rect key="frame" x="0.0" y="336" width="288" height="74"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAL-xF-7C1" userLabel="Empty Cell">
                                                         <rect key="frame" x="0.0" y="0.0" width="82.5" height="74"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFp-Jg-6TM" userLabel="Call Passcode Button" customClass="CallButton" customModule="Dialpad" customModuleProvider="target">
-                                                        <rect key="frame" x="102.5" y="1.5" width="83" height="71.5"/>
-                                                        <state key="normal" backgroundImage="phone.fill" catalog="system"/>
+                                                        <rect key="frame" x="102.5" y="0.0" width="83" height="74"/>
+                                                        <state key="normal" image="phone.fill" catalog="system"/>
                                                         <connections>
                                                             <segue destination="EnT-iO-qXR" kind="presentation" id="zvr-es-lqH"/>
                                                         </connections>
@@ -236,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="460.71428571428567"/>
+            <point key="canvasLocation" x="19" y="461"/>
         </scene>
         <!--Contacts View Controller-->
         <scene sceneID="xqo-EP-C1A">
@@ -269,6 +269,95 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xe8-Qx-cda" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1025" y="1221"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="OjB-uP-DZv">
+            <objects>
+                <viewController id="Wwv-Cz-kN6" userLabel="Login View Controller" customClass="LoginViewController" customModule="Dialpad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="poG-qV-6gD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8k3-WF-ctt">
+                                <rect key="frame" x="62" y="269" width="290" height="358"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pk1-1Z-wPX" customClass="CustomTextField" customModule="Dialpad">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="59.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1CZ-8p-Vsl" userLabel="Custom Password" customClass="CustomTextField" customModule="Dialpad">
+                                        <rect key="frame" x="0.0" y="74.5" width="290" height="59.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONe-Aw-eh0" userLabel="Forgot Password">
+                                        <rect key="frame" x="0.0" y="149" width="290" height="60"/>
+                                        <state key="normal" title="Forgot Password?">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="M5R-B6-KnA" kind="show" id="vjo-xw-kRI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOt-Cd-u9K" userLabel="Login">
+                                        <rect key="frame" x="0.0" y="224" width="290" height="59.5"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goToDialPad" destination="Wwv-Cz-kN6" eventType="touchUpInside" id="rV9-bI-Vht"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pu5-RV-n61" userLabel="SignUp">
+                                        <rect key="frame" x="0.0" y="298.5" width="290" height="59.5"/>
+                                        <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <segue destination="M5R-B6-KnA" kind="show" id="rBY-8e-oya"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1CZ-8p-Vsl" firstAttribute="width" secondItem="Pk1-1Z-wPX" secondAttribute="width" id="0Kv-lw-uKW"/>
+                                    <constraint firstItem="ONe-Aw-eh0" firstAttribute="height" secondItem="1CZ-8p-Vsl" secondAttribute="height" id="3i4-gt-xNT"/>
+                                    <constraint firstItem="ONe-Aw-eh0" firstAttribute="width" secondItem="1CZ-8p-Vsl" secondAttribute="width" id="PI9-XQ-0Vn"/>
+                                    <constraint firstItem="pu5-RV-n61" firstAttribute="width" secondItem="XOt-Cd-u9K" secondAttribute="width" id="XCa-VN-e1b"/>
+                                    <constraint firstItem="1CZ-8p-Vsl" firstAttribute="height" secondItem="Pk1-1Z-wPX" secondAttribute="height" id="kQq-tE-wtD"/>
+                                    <constraint firstItem="pu5-RV-n61" firstAttribute="height" secondItem="XOt-Cd-u9K" secondAttribute="height" id="n8h-E4-BaL"/>
+                                    <constraint firstItem="XOt-Cd-u9K" firstAttribute="width" secondItem="ONe-Aw-eh0" secondAttribute="width" id="pIM-J4-qyu"/>
+                                    <constraint firstItem="XOt-Cd-u9K" firstAttribute="height" secondItem="ONe-Aw-eh0" secondAttribute="height" id="sP2-YS-LdP"/>
+                                    <constraint firstItem="Pk1-1Z-wPX" firstAttribute="width" secondItem="8k3-WF-ctt" secondAttribute="width" id="uKr-wi-2Xl"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olx-jU-3du" userLabel="Login Text">
+                                <rect key="frame" x="171" y="168" width="72" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rlV-43-FpE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8k3-WF-ctt" firstAttribute="centerY" secondItem="poG-qV-6gD" secondAttribute="centerY" id="6HL-se-aLc" userLabel="CenterY"/>
+                            <constraint firstItem="8k3-WF-ctt" firstAttribute="height" secondItem="poG-qV-6gD" secondAttribute="height" multiplier="0.4" id="6V4-Qn-2se"/>
+                            <constraint firstItem="8k3-WF-ctt" firstAttribute="width" secondItem="poG-qV-6gD" secondAttribute="width" multiplier="0.7" id="Jiw-e1-aYS"/>
+                            <constraint firstItem="8k3-WF-ctt" firstAttribute="centerX" secondItem="poG-qV-6gD" secondAttribute="centerX" id="M0h-bW-vte"/>
+                            <constraint firstItem="olx-jU-3du" firstAttribute="centerX" secondItem="poG-qV-6gD" secondAttribute="centerX" id="VNt-Mc-um6"/>
+                            <constraint firstItem="8k3-WF-ctt" firstAttribute="top" secondItem="olx-jU-3du" secondAttribute="bottom" constant="65" id="uFO-aU-QO0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AvF-Cp-gJR"/>
+                    <connections>
+                        <outlet property="centerY" destination="6HL-se-aLc" id="ap5-xZ-Vae"/>
+                        <outlet property="email" destination="Pk1-1Z-wPX" id="QEd-Mj-mb8"/>
+                        <outlet property="forgotPassword" destination="ONe-Aw-eh0" id="Xin-bv-lCj"/>
+                        <outlet property="loginButton" destination="XOt-Cd-u9K" id="5Eo-5B-QX9"/>
+                        <outlet property="password" destination="1CZ-8p-Vsl" id="TmE-Zp-T05"/>
+                        <outlet property="signupButton" destination="pu5-RV-n61" id="bOO-FA-KXn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPP-WR-qmw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3107" y="461"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="HgQ-Jg-7gS">
@@ -355,6 +444,24 @@
             </objects>
             <point key="canvasLocation" x="2071" y="-389"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6AN-FE-wGa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MqL-zl-r6c" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zOW-IN-Yqg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wwv-Cz-kN6" kind="relationship" relationship="rootViewController" id="9DA-be-B40"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHo-gz-IPh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3106" y="-1136"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="faJ-tD-OXF"/>
@@ -372,6 +479,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -20,6 +20,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!
     
+    let defaultEmail = "test@mail.com"
+    let defaultPassword = "1234"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         registerForKeyboardNotifications()
@@ -85,8 +88,6 @@ class ViewController: UIViewController {
        }
        
         moveKeyboardUp(keyboardFrame.size.height)
-        
-        
      }
 
      @objc private func keyboardWillHide(_ notification: NSNotification) {
@@ -105,6 +106,12 @@ class ViewController: UIViewController {
     private func reserUI(){
         keyboardIsVisible = false
         centerY.constant = 0
+    }
+    
+    @IBAction func goToDialPad(){
+        if(self.email.text == self.defaultEmail && self.password.text == self.defaultPassword){
+            let mainStoryBoard = UIStoryboard(name: "", bundle: nil)
+        }
     }
 }
 

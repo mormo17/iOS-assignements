@@ -14,10 +14,13 @@
 		543573842560531B00C10658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543573832560531B00C10658 /* Assets.xcassets */; };
 		543573872560531B00C10658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543573852560531B00C10658 /* LaunchScreen.storyboard */; };
 		543573912560535000C10658 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543573902560535000C10658 /* RoundButton.swift */; };
+		545BEA5725778F6900B77679 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545BEA5625778F6900B77679 /* CustomTextField.swift */; };
+		545BEA5A25778FD000B77679 /* CustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545BEA5925778FD000B77679 /* CustomTextField.xib */; };
 		545E012D256C16AB0031A0A9 /* CallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E012C256C16AB0031A0A9 /* CallButton.swift */; };
 		545E0130256C177A0031A0A9 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E012F256C177A0031A0A9 /* DeleteButton.swift */; };
 		545E014D256C33120031A0A9 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545E014C256C33120031A0A9 /* CustomButton.xib */; };
 		545E0154256C39230031A0A9 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E0153256C39230031A0A9 /* CustomButton.swift */; };
+		5489EED02576D9A500F4CB2E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5489EECF2576D9A500F4CB2E /* LoginViewController.swift */; };
 		54B43E562569C88600235351 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B43E552569C88600235351 /* ContactsViewController.swift */; };
 		54B43E5A2569D72600235351 /* BlankPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B43E592569D72600235351 /* BlankPageViewController.swift */; };
 /* End PBXBuildFile section */
@@ -32,10 +35,13 @@
 		543573862560531B00C10658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		543573882560531B00C10658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		543573902560535000C10658 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		545BEA5625778F6900B77679 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		545BEA5925778FD000B77679 /* CustomTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextField.xib; sourceTree = "<group>"; };
 		545E012C256C16AB0031A0A9 /* CallButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallButton.swift; sourceTree = "<group>"; };
 		545E012F256C177A0031A0A9 /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
 		545E014C256C33120031A0A9 /* CustomButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
 		545E0153256C39230031A0A9 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		5489EECF2576D9A500F4CB2E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		54B43E552569C88600235351 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		54B43E592569D72600235351 /* BlankPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +96,8 @@
 				543573902560535000C10658 /* RoundButton.swift */,
 				545E012F256C177A0031A0A9 /* DeleteButton.swift */,
 				545E012C256C16AB0031A0A9 /* CallButton.swift */,
+				545BEA5625778F6900B77679 /* CustomTextField.swift */,
+				545BEA5925778FD000B77679 /* CustomTextField.xib */,
 			);
 			path = "Custom Buttons";
 			sourceTree = "<group>";
@@ -100,6 +108,7 @@
 				54B43E592569D72600235351 /* BlankPageViewController.swift */,
 				54B43E552569C88600235351 /* ContactsViewController.swift */,
 				5435737E2560531A00C10658 /* HomeViewController.swift */,
+				5489EECF2576D9A500F4CB2E /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -161,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545BEA5A25778FD000B77679 /* CustomTextField.xib in Resources */,
 				545E014D256C33120031A0A9 /* CustomButton.xib in Resources */,
 				543573872560531B00C10658 /* LaunchScreen.storyboard in Resources */,
 				543573842560531B00C10658 /* Assets.xcassets in Resources */,
@@ -176,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5435737F2560531A00C10658 /* HomeViewController.swift in Sources */,
+				545BEA5725778F6900B77679 /* CustomTextField.swift in Sources */,
 				5435737B2560531A00C10658 /* AppDelegate.swift in Sources */,
 				545E0154256C39230031A0A9 /* CustomButton.swift in Sources */,
 				5435737D2560531A00C10658 /* SceneDelegate.swift in Sources */,
@@ -183,6 +194,7 @@
 				545E0130256C177A0031A0A9 /* DeleteButton.swift in Sources */,
 				543573912560535000C10658 /* RoundButton.swift in Sources */,
 				54B43E562569C88600235351 /* ContactsViewController.swift in Sources */,
+				5489EED02576D9A500F4CB2E /* LoginViewController.swift in Sources */,
 				54B43E5A2569D72600235351 /* BlankPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
