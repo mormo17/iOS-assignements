@@ -4,6 +4,7 @@
 //
 //  Created by Mariam on 12/19/20.
 //
+
 import UIKit
 
 class YellowCell: UITableViewCell{
@@ -34,7 +35,7 @@ class YellowCell: UITableViewCell{
 
 extension YellowCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

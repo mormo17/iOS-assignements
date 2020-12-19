@@ -23,9 +23,9 @@ class ViewController: UIViewController {
     }
     
     func registerCells(){
-        tableView.register(RedCell.nib(), forCellReuseIdentifier: "RedCell")
-        tableView.register(BlueCell.nib(), forCellReuseIdentifier: "BlueCell")
-        tableView.register(YellowCell.nib(), forCellReuseIdentifier: "YellowCell")
+        tableView.register(RedCell.nib(), forCellReuseIdentifier: RedCell.identifier)
+        tableView.register(BlueCell.nib(), forCellReuseIdentifier: BlueCell.identifier)
+        tableView.register(YellowCell.nib(), forCellReuseIdentifier: YellowCell.identifier)
     }
     
     override func viewDidLayoutSubviews() {
@@ -34,6 +34,7 @@ class ViewController: UIViewController {
     }
     
 }
+
 extension ViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
