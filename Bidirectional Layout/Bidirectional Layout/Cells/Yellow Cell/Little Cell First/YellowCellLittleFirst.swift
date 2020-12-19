@@ -14,8 +14,4 @@ class YellowCellLittleFirst: UICollectionViewCell {
     static func nib() -> UINib{
         return UINib(nibName: nibName, bundle: nil)
     }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
 }

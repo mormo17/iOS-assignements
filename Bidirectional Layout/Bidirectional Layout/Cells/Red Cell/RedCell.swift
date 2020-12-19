@@ -14,8 +14,4 @@ class RedCell: UITableViewCell {
     static func nib() -> UINib{
         return UINib(nibName: nibName, bundle: nil)
     }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }    
 }
