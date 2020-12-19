@@ -7,13 +7,12 @@
 import UIKit
 
 class YellowCell: UITableViewCell{
-    static let nibName = "YellowCell"
     static let identifier = "YellowCell"
     
     @IBOutlet var collectionView: UICollectionView!
     
     static func nib() -> UINib{
-        return UINib(nibName: nibName, bundle: nil)
+        return UINib(nibName: identifier, bundle: nil)
     }
         
     override func awakeFromNib() {
@@ -28,8 +27,8 @@ class YellowCell: UITableViewCell{
     }
     
     func registerCells(){
-        collectionView.register(YellowCellLittleFirst.nib(), forCellWithReuseIdentifier: "YellowCellLittleFirst")
-        collectionView.register(YellowCellBigFirst.nib(), forCellWithReuseIdentifier: "YellowCellBigFirst")
+        collectionView.register(YellowCellLittleFirst.nib(), forCellWithReuseIdentifier: YellowCellLittleFirst.identifier)
+        collectionView.register(YellowCellBigFirst.nib(), forCellWithReuseIdentifier: YellowCellBigFirst.identifier)
     }
 }
 

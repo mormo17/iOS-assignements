@@ -8,10 +8,9 @@
 import UIKit
 
 class BlueCell: UITableViewCell {
-    static let nibName = "BlueCell"
     static let identifier = "BlueCell"
     
     static func nib() -> UINib{
-        return UINib(nibName: nibName, bundle: nil)
+        return UINib(nibName: identifier, bundle: nil)
     }
 }

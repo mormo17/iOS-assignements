@@ -8,10 +8,9 @@
 import UIKit
 
 class YellowCellBigFirst: UICollectionViewCell {
-    static let nibName = "YellowCellBigFirst"
     static let identifier = "YellowCellBigFirst"
     
     static func nib() -> UINib{
-        return UINib(nibName: nibName, bundle: nil)
+        return UINib(nibName: identifier, bundle: nil)
     }
 }
