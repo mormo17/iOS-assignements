@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		545ED8CE25952911004303FE /* Contact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545ED8CC25952911004303FE /* Contact+CoreDataClass.swift */; };
+		545ED8CF25952911004303FE /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545ED8CD25952911004303FE /* Contact+CoreDataProperties.swift */; };
+		545ED8D325952A7F004303FE /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545ED8D225952A7F004303FE /* DBManager.swift */; };
 		546974D6258E50BF0038B3FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546974D5258E50BF0038B3FA /* AppDelegate.swift */; };
 		546974D8258E50BF0038B3FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546974D7258E50BF0038B3FA /* SceneDelegate.swift */; };
 		546974DA258E50BF0038B3FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546974D9258E50BF0038B3FA /* ViewController.swift */; };
@@ -14,9 +17,14 @@
 		546974E0258E50BF0038B3FA /* Contact_Book.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 546974DE258E50BF0038B3FA /* Contact_Book.xcdatamodeld */; };
 		546974E2258E50C20038B3FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546974E1258E50C20038B3FA /* Assets.xcassets */; };
 		546974E5258E50C20038B3FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546974E3258E50C20038B3FA /* LaunchScreen.storyboard */; };
+		54F294D72593CE7D000FB619 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F294D62593CE7D000FB619 /* CustomView.swift */; };
+		54F294DD2593DD40000FB619 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F294DC2593DD3F000FB619 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		545ED8CC25952911004303FE /* Contact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		545ED8CD25952911004303FE /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		545ED8D225952A7F004303FE /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		546974D2258E50BF0038B3FA /* Contact Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contact Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		546974D5258E50BF0038B3FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		546974D7258E50BF0038B3FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +34,8 @@
 		546974E1258E50C20038B3FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		546974E4258E50C20038B3FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		546974E6258E50C20038B3FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54F294D62593CE7D000FB619 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		54F294DC2593DD3F000FB619 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		545ED8D12595291E004303FE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				545ED8CD25952911004303FE /* Contact+CoreDataProperties.swift */,
+				545ED8CC25952911004303FE /* Contact+CoreDataClass.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		546974C9258E50BF0038B3FA = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +77,28 @@
 		546974D4258E50BF0038B3FA /* Contact Book */ = {
 			isa = PBXGroup;
 			children = (
+				545ED8D12595291E004303FE /* Entities */,
+				546974ED258E5AE00038B3FA /* Custom View */,
 				546974D5258E50BF0038B3FA /* AppDelegate.swift */,
 				546974D7258E50BF0038B3FA /* SceneDelegate.swift */,
 				546974D9258E50BF0038B3FA /* ViewController.swift */,
 				546974DB258E50BF0038B3FA /* Main.storyboard */,
 				546974E1258E50C20038B3FA /* Assets.xcassets */,
+				54F294DC2593DD3F000FB619 /* CollectionViewController.swift */,
 				546974E3258E50C20038B3FA /* LaunchScreen.storyboard */,
 				546974E6258E50C20038B3FA /* Info.plist */,
 				546974DE258E50BF0038B3FA /* Contact_Book.xcdatamodeld */,
+				545ED8D225952A7F004303FE /* DBManager.swift */,
 			);
 			path = "Contact Book";
+			sourceTree = "<group>";
+		};
+		546974ED258E5AE00038B3FA /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				54F294D62593CE7D000FB619 /* CustomView.swift */,
+			);
+			path = "Custom View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F294DD2593DD40000FB619 /* CollectionViewController.swift in Sources */,
+				545ED8CE25952911004303FE /* Contact+CoreDataClass.swift in Sources */,
+				54F294D72593CE7D000FB619 /* CustomView.swift in Sources */,
 				546974DA258E50BF0038B3FA /* ViewController.swift in Sources */,
+				545ED8D325952A7F004303FE /* DBManager.swift in Sources */,
+				545ED8CF25952911004303FE /* Contact+CoreDataProperties.swift in Sources */,
 				546974D6258E50BF0038B3FA /* AppDelegate.swift in Sources */,
 				546974D8258E50BF0038B3FA /* SceneDelegate.swift in Sources */,
 				546974E0258E50BF0038B3FA /* Contact_Book.xcdatamodeld in Sources */,
