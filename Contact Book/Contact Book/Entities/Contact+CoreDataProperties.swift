@@ -2,7 +2,7 @@
 //  Contact+CoreDataProperties.swift
 //  Contact Book
 //
-//  Created by Mariam on 12/24/20.
+//  Created by Mariam on 12/28/20.
 //
 //
 
@@ -17,7 +17,7 @@ extension Contact {
     }
 
     @NSManaged public var name: String?
-    @NSManaged public var number: Int64
+    @NSManaged public var number: String?
 
 }
 

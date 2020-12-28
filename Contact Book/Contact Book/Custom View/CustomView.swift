@@ -7,19 +7,15 @@
 
 import UIKit
 
-class CustomView: UICollectionViewCell{
-//    static let identifier = "CustomView"
+class CustomView: UICollectionViewCell {
     
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var circle: UIView!
     @IBOutlet weak var initials: UILabel!
     @IBOutlet weak var number: UILabel!
     @IBOutlet weak var contactName: UILabel!
-    //    static func nib() -> UINib{
-//        return UINib(nibName: identifier, bundle: nil)
-//    }
 
-    func configure(with initialsText: String, with numberText: Int64, with contactNameText: String){
+    func configure(with initialsText: String, with numberText: String, with contactNameText: String){
         setUpCircle(with: initialsText)
         setUpNumber(with: numberText)
         setUpContactName(with: contactNameText)
@@ -37,8 +33,8 @@ class CustomView: UICollectionViewCell{
         circle.addSubview(initials)
     }
     
-    func setUpNumber(with numberText: Int64){
-        number.text = String(numberText)
+    func setUpNumber(with numberText: String){
+        number.text = numberText
     }
     
     func setUpContactName(with contactNameText: String){

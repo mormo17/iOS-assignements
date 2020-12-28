@@ -61,10 +61,10 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
                 style: .default,
                 handler: { [unowned self] _ in
                     guard let nameTextField = nameField, let name = nameTextField.text, !name.isEmpty else { return }
-                    guard let numberTextfield = numberfield, let number = numberTextfield.text, !number.isEmpty else { return }
+                    guard let numberTextfield = numberfield, let number = numberTextfield.text, (!number.isEmpty || containtLetters(number: number)) else { return }
                     let person = Contact(context: dbContext)
                     person.name = name
-                    person.number = Int64(number)!
+                    person.number = number
                     do {
                         try dbContext.save()
                         fetchContacts()
@@ -82,6 +82,16 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         )
 
         present(alert, animated: true, completion: nil)
+    }
+    
+    func containtLetters(number: String) -> Bool{
+        for ch in number{
+            if (ch >= "a" && ch <= "z") || (ch >= "A" && ch <= "Z"){
+                return false
+            }
+        }
+        
+        return true
     }
     
     @objc func deleteContact(longPressGR: UILongPressGestureRecognizer) {
@@ -119,7 +129,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
                 handler: nil
             )
         )
-        if indexPath != nil{
+        if indexPath != nil {   // in case it is pressed on blank area, for example below contacts.
             present(alert, animated: true, completion: nil)
         }
         
@@ -133,14 +143,13 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         var cell = UICollectionViewCell()
         
         if let customCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as? CustomView{
-//            customCell.configure(with: "MO", with: 598780819, with: "Mariam")
-            
             let fullName    = contacts[indexPath.row].name
             let fullNameArr = fullName!.components(separatedBy: " ")
             let initials = fullNameArr.reduce("") { ($0 == "" ? "" : "\($0.first!)") + "\($1.first!)" }
             
             let name    = fullNameArr[0]
-            let numberToSet = contacts[indexPath.row].number
+            let numberToSet = contacts[indexPath.row].number!
+            
             customCell.configure(with: initials, with: numberToSet, with: name)
             cell = customCell
         }
@@ -154,4 +163,15 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         return CGSize(width: self.collectionView!.bounds.width/4, height: self.collectionView!.bounds.width/2.76)
        }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 15
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 15
+    }
 }
